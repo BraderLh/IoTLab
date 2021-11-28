@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  node-red:
+    image: nodered/node-red:latest
+    ports:
+      - "1880:1880"
+
+  mosquitto:
+    image: eclipse-mosquitto:1.6
+    ports:
+      - "9001:9001"
+      - "1883:1883"
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    command: --init-file /data/application/init.sql
+    volumes:
+      - ./init.sql:/data/application/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: Pass_word1
+      MYSQL_DATABASE: Homestead
+      MYSQL_USER: root
+      MYSQL_PASSWORD: Pass_word1
+    ports:
+      - "33061:3306"
+
+networks:
+  default:
+    external:
+      name: red_locall
