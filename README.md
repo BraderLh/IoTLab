@@ -16,7 +16,7 @@ Integrantes:
 ## Creación de la Base de Datos principal con Series Temporales:
 Una vez obtenido todos los materiales que son requisitos esenciales para este procedimiento. Lo primero que se hace es abrir el Sistema Gestor de Bases de Datos Relaciones que se esté usando y proceder a crear una Base de Datos con el nombre de ***tseriesdb***. Se puede realizar manualmente o ejecutando el código fuente situado en el repositorio con el nombre de *init.sql*. De tal forma que quede de la siguiente forma.
 
-![Para ejecutar el contenedor]
+## Para ejecutar el contenedor
 - Ejecutar: 
 > docker-compose up 
 
