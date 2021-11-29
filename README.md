@@ -16,9 +16,19 @@ Integrantes:
 ## Creación de la Base de Datos principal con Series Temporales:
 Una vez obtenido todos los materiales que son requisitos esenciales para este procedimiento. Lo primero que se hace es abrir el Sistema Gestor de Bases de Datos Relaciones que se esté usando y proceder a crear una Base de Datos con el nombre de ***tseriesdb***. Se puede realizar manualmente o ejecutando el código fuente situado en el repositorio con el nombre de *init.sql*. De tal forma que quede de la siguiente forma.
 
-![Base de datos de Series Temporales](https://github.com/BraderLh/IoTLab/blob/main/imgs/1.PNG?raw=true)
+## Para ejecutar el contenedor
+- Ejecutar: 
+> docker-compose up 
 
-Luego de ello, se puede crear un usuario específico para esta Base de Datos, pero como es de manera local lo dejaremos con el usaurio por defecto que nos brinda MySQL después de instalarlo.
+- Entrar a la dirección de NODE-RED [localhost:1880](http://localhost:1880)
+
+- Instalar el nodo de MySQL según las instrucciónes del libro
+
+
+
+<!-- ![Base de datos de Series Temporales](https://github.com/BraderLh/IoTLab/blob/main/imgs/1.PNG?raw=true)
+
+Luego de ello, se puede crear un usuario específico para esta Base de Datos, pero como es de manera local lo dejaremos con el usaurio por defecto que nos brinda MySQL después de instalarlo.-->
 ## Creación de la tabla para la Base de Datos
 Luego de haber creado la base de datos, se procede a crear la tabla que contendrá este esquema, llamada ***thingdata***. Con los siguiente atributos y tipo de dato, que formarían las siguientes columnas:
 - id (int)
@@ -54,6 +64,7 @@ Al ejecutar dicho comando mostrará lo siguiente:
 
  ![Interfaz de Node-RED](https://github.com/BraderLh/IoTLab/blob/main/imgs/5.PNG?raw=true)
 
+<<<<<<< HEAD
 Entonces, una vez en la interfaz se debe dirigir a la parte superior derecha en el ícono de tres barras. Se busca la opción *Manage palette* y luego se mostrará lo siguiente.
 
 ![Administrador de la Paleta](https://github.com/BraderLh/IoTLab/blob/main/imgs/6.PNG?raw=true)
