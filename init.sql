@@ -1,7 +1,6 @@
 CREATE DATABASE IF NOT EXISTS tSeriesDB;
 USE tSeriesDB;
 
-drop table thingData;
 CREATE TABLE IF NOT EXISTS thingData(
 id INT (11),
 topic VARCHAR (1024),
