@@ -1,31 +1,48 @@
-version: "3.7"
+version: "3.8"
+
+networks:
+  red_local:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.19.0.0/16
+          gateway: 172.19.0.1
+
 services:
   node-red:
     image: nodered/node-red:latest
     ports:
       - "1880:1880"
+    networks:
+      red_local:
+        ipv4_address: 172.19.0.2
+    # depends_on:
+    #   - mysql
 
   mosquitto:
     image: eclipse-mosquitto:1.6
     ports:
       - "9001:9001"
       - "1883:1883"
+    networks:
+      red_local:
+        ipv4_address: 172.19.0.4
 
   mysql:
-    image: mysql:latest
+    image: mysql:8
     restart: always
     command: --init-file /data/application/init.sql
     volumes:
       - ./init.sql:/data/application/init.sql
+      - ./custom.conf:/etc/mysql/conf.d/custom.conf
     environment:
-      MYSQL_ROOT_PASSWORD: Pass_word1
+      MYSQL_ROOT_PASSWORD: 'Pass_word1'
       MYSQL_DATABASE: Homestead
-      MYSQL_USER: root
-      MYSQL_PASSWORD: Pass_word1
+      MYSQL_USER: nruser
+      MYSQL_PASSWORD: 'Pass_word1'
+      MYSQL_ROOT_HOST: '%'
     ports:
-      - "33061:3306"
-
-networks:
-  default:
-    external:
-      name: red_locall
+      - "33062:3306"
+    networks:
+      red_local:
+        ipv4_address: 172.19.0.3
