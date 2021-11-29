@@ -1,3 +1,6 @@
+CREATE USER 'root'@'%' IDENTIFIED BY 'Pass_word1'; 
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' with grant OPTION;
+flush privileges;
 CREATE DATABASE IF NOT EXISTS tSeriesDB;
 USE tSeriesDB;
 
