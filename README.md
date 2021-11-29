@@ -20,7 +20,7 @@ Una vez obtenido todos los materiales que son requisitos esenciales para este pr
 - Ejecutar: 
 > docker-compose up 
 
-- Entrar a la dirección de NODE-RED [localhost:1880](localhost:1880)
+- Entrar a la dirección de NODE-RED [localhost:1880](http://localhost:1880)
 
 - Instalar el nodo de MySQL según las instrucciónes del libro
 
