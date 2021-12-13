@@ -47,8 +47,8 @@ Si se desea también se puede crear un archivo para la configuración de usuario
 Cada uno de los flujos desarrollados hasta el momento se encuentran en el archivo *.json*. Este deberá ser importado a la interfaz *Node*. los cuales fueron exportados por el node-red. Asu vez, cada uno de las querys se encuentran en la carpeta
 
 ## Ejecuciones de las Querys
-![Ejecucion](https://github.com/BraderLh/IoTLab/blob/blhbranch/imgs/1.PNG?raw=true)
+![Ejecucion](https://github.com/BraderLh/IoTLab/blob/blhbranch/iot-pract2/imgs/1.PNG?raw=true)
 
-![Ejecucion](https://github.com/BraderLh/IoTLab/blob/blhbranch/imgs/2.PNG?raw=true)
+![Ejecucion](https://github.com/BraderLh/IoTLab/blob/blhbranch/iot-pract2/imgs/2.PNG?raw=true)
 
-![Ejecucion](https://github.com/BraderLh/IoTLab/blob/blhbranch/imgs/3.PNG?raw=true)
+![Ejecucion](https://github.com/BraderLh/IoTLab/blob/blhbranch/iot-pract2/imgs/3.PNG?raw=true)
