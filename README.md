@@ -79,7 +79,7 @@ En esta parte se configura los nodos de salida que pertenecen al *timestamp* y *
 
 ![Adición del nuevo broker](https://github.com/BraderLh/IoTLab/blob/main/imgs/9.PNG?raw=true)
 
-![Ingresando los detalles del servidor y cliente](https://github.com/BraderLh/IoTLab/blob/main/imgs11.PNG?raw=true)
+![Ingresando los detalles del servidor y cliente](https://github.com/BraderLh/IoTLab/blob/main/imgs/11.PNG?raw=true)
 
 Al final todo quedaría de la siguiente manera:
 
