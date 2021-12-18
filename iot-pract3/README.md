@@ -10,7 +10,7 @@
 * Comprensión e implementación de la autenticación lógica
 
 ## Consideraciones
-Para comprobar las ejecuciones y todo lo que comprende este trabajo, cambie ejecute los siguientes comandos en una consola de git o de su preferencia:
+Para comprobar las ejecuciones y todo lo que comprende este trabajo, dispóngase a ejecutar los siguientes comandos en una consola de git o de su preferencia:
 ```
 $ git clone https://github.com/BraderLh/IoTLab.git
 $ git branch
