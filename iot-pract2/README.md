@@ -8,7 +8,7 @@
 Para ver las ejecuciones y e archivo Node Red, cambiar a la rama *blhbranch*
 ```
 $ git branch
-$ git checkout blhorigin
+$ git checkout blhbranch
 ```
 ## Prerrequisitos (Opcional)
 Para ello en el archivo de configuración de mosquitto (en Windows mosquitto.conf) debemos editar o adicionar las siguientes líneas
